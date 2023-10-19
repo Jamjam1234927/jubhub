@@ -1,0 +1,605 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local TopBar = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local text = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Main = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Home = Instance.new("Frame")
+local HideDisplay = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local HideID = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local HideUsername = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local DaName = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local DName = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local Ver = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local UserId = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Plr = Instance.new("Frame")
+local WalkSpeedTxt = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local WalkSpeed = Instance.new("TextBox")
+local UICorner_11 = Instance.new("UICorner")
+local JumpPower = Instance.new("TextBox")
+local UICorner_12 = Instance.new("UICorner")
+local JumpPowerTxt = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local HomePage = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Player = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Scripts = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local ArcaneEU = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local InfiniteYield = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Jared = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local ScriptsPage = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+TopBar.Name = "TopBar"
+TopBar.Parent = ScreenGui
+TopBar.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
+TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Position = UDim2.new(0.264965653, 0, 0.304867476, 0)
+TopBar.Size = UDim2.new(0, 394, 0, 22)
+
+UICorner.Parent = TopBar
+
+text.Name = "text"
+text.Parent = TopBar
+text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text.BackgroundTransparency = 1.000
+text.BorderColor3 = Color3.fromRGB(0, 0, 0)
+text.BorderSizePixel = 0
+text.Position = UDim2.new(0.017766498, 0, 0, 0)
+text.Size = UDim2.new(0, 265, 0, 22)
+text.Font = Enum.Font.SourceSans
+text.Text = "Jub - A good hub - Free Version - Testing Beta"
+text.TextColor3 = Color3.fromRGB(255, 255, 255)
+text.TextScaled = true
+text.TextSize = 14.000
+text.TextWrapped = true
+
+TextButton.Parent = TopBar
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.811525166, 0, 1.47118032, 0)
+TextButton.Size = UDim2.new(0, 26, 0, -43)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "-"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 40.000
+
+Main.Name = "Main"
+Main.Parent = TopBar
+Main.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(-0.00153184298, 0, 0.971034646, 0)
+Main.Size = UDim2.new(0, 394, 0, 187)
+
+UICorner_2.Parent = Main
+
+Home.Name = "Home"
+Home.Parent = Main
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0, 394, 0, 187)
+
+HideDisplay.Name = "HideDisplay"
+HideDisplay.Parent = Home
+HideDisplay.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+HideDisplay.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideDisplay.BorderSizePixel = 0
+HideDisplay.Position = UDim2.new(0.406091362, 0, 0.331550807, 0)
+HideDisplay.Size = UDim2.new(0, 12, 0, 12)
+HideDisplay.Font = Enum.Font.SourceSans
+HideDisplay.Text = ""
+HideDisplay.TextColor3 = Color3.fromRGB(0, 0, 0)
+HideDisplay.TextSize = 14.000
+
+UICorner_3.Parent = HideDisplay
+
+HideID.Name = "HideID"
+HideID.Parent = Home
+HideID.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+HideID.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideID.BorderSizePixel = 0
+HideID.Position = UDim2.new(0.406091362, 0, 0.545454562, 0)
+HideID.Size = UDim2.new(0, 12, 0, 12)
+HideID.Font = Enum.Font.SourceSans
+HideID.Text = ""
+HideID.TextColor3 = Color3.fromRGB(0, 0, 0)
+HideID.TextSize = 14.000
+
+UICorner_4.Parent = HideID
+
+HideUsername.Name = "HideUsername"
+HideUsername.Parent = Home
+HideUsername.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+HideUsername.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideUsername.BorderSizePixel = 0
+HideUsername.Position = UDim2.new(0.406091362, 0, 0.122994654, 0)
+HideUsername.Size = UDim2.new(0, 12, 0, 12)
+HideUsername.Font = Enum.Font.SourceSans
+HideUsername.Text = ""
+HideUsername.TextColor3 = Color3.fromRGB(0, 0, 0)
+HideUsername.TextSize = 14.000
+
+UICorner_5.Parent = HideUsername
+
+DaName.Name = "DaName"
+DaName.Parent = Home
+DaName.BackgroundColor3 = Color3.fromRGB(158, 158, 158)
+DaName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DaName.BorderSizePixel = 0
+DaName.Position = UDim2.new(0.451776654, 0, 0.085561499, 0)
+DaName.Size = UDim2.new(0, 186, 0, 26)
+DaName.Font = Enum.Font.SourceSans
+DaName.Text = "Username:"
+DaName.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaName.TextScaled = true
+DaName.TextSize = 14.000
+DaName.TextWrapped = true
+
+UICorner_6.Parent = DaName
+
+DName.Name = "DName"
+DName.Parent = Home
+DName.BackgroundColor3 = Color3.fromRGB(158, 158, 158)
+DName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DName.BorderSizePixel = 0
+DName.Position = UDim2.new(0.451776654, 0, 0.294117659, 0)
+DName.Size = UDim2.new(0, 186, 0, 26)
+DName.Font = Enum.Font.SourceSans
+DName.Text = "Display Name:"
+DName.TextColor3 = Color3.fromRGB(0, 0, 0)
+DName.TextScaled = true
+DName.TextSize = 14.000
+DName.TextWrapped = true
+
+UICorner_7.Parent = DName
+
+Ver.Name = "Ver"
+Ver.Parent = Home
+Ver.BackgroundColor3 = Color3.fromRGB(158, 158, 158)
+Ver.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ver.BorderSizePixel = 0
+Ver.Position = UDim2.new(0.451776654, 0, 0.727272749, 0)
+Ver.Size = UDim2.new(0, 186, 0, 26)
+Ver.Font = Enum.Font.SourceSans
+Ver.Text = "Version: Free"
+Ver.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ver.TextScaled = true
+Ver.TextSize = 14.000
+Ver.TextWrapped = true
+
+UICorner_8.Parent = Ver
+
+UserId.Name = "UserId"
+UserId.Parent = Home
+UserId.BackgroundColor3 = Color3.fromRGB(158, 158, 158)
+UserId.BorderColor3 = Color3.fromRGB(0, 0, 0)
+UserId.BorderSizePixel = 0
+UserId.Position = UDim2.new(0.451776654, 0, 0.508021414, 0)
+UserId.Size = UDim2.new(0, 186, 0, 26)
+UserId.Font = Enum.Font.SourceSans
+UserId.Text = "UserID:"
+UserId.TextColor3 = Color3.fromRGB(0, 0, 0)
+UserId.TextScaled = true
+UserId.TextSize = 14.000
+UserId.TextWrapped = true
+
+UICorner_9.Parent = UserId
+
+Plr.Name = "Plr"
+Plr.Parent = Main
+Plr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Plr.BackgroundTransparency = 1.000
+Plr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Plr.BorderSizePixel = 0
+Plr.Size = UDim2.new(0, 394, 0, 187)
+Plr.Visible = false
+
+WalkSpeedTxt.Name = "WalkSpeedTxt"
+WalkSpeedTxt.Parent = Plr
+WalkSpeedTxt.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+WalkSpeedTxt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedTxt.BorderSizePixel = 0
+WalkSpeedTxt.Position = UDim2.new(0.581218302, 0, 0.0374331549, 0)
+WalkSpeedTxt.Size = UDim2.new(0, 131, 0, 27)
+WalkSpeedTxt.Font = Enum.Font.SourceSans
+WalkSpeedTxt.Text = "Walkspeed"
+WalkSpeedTxt.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedTxt.TextSize = 14.000
+
+UICorner_10.Parent = WalkSpeedTxt
+
+WalkSpeed.Name = "WalkSpeed"
+WalkSpeed.Parent = Plr
+WalkSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkSpeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeed.BorderSizePixel = 0
+WalkSpeed.Position = UDim2.new(0.614213169, 0, 0.21390374, 0)
+WalkSpeed.Size = UDim2.new(0, 104, 0, 26)
+WalkSpeed.Font = Enum.Font.SourceSans
+WalkSpeed.Text = "16"
+WalkSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeed.TextScaled = true
+WalkSpeed.TextSize = 14.000
+WalkSpeed.TextWrapped = true
+
+UICorner_11.Parent = WalkSpeed
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = Plr
+JumpPower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.BorderSizePixel = 0
+JumpPower.Position = UDim2.new(0.614213169, 0, 0.700534761, 0)
+JumpPower.Size = UDim2.new(0, 104, 0, 26)
+JumpPower.Font = Enum.Font.SourceSans
+JumpPower.Text = "50"
+JumpPower.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.TextScaled = true
+JumpPower.TextSize = 14.000
+JumpPower.TextWrapped = true
+
+UICorner_12.Parent = JumpPower
+
+JumpPowerTxt.Name = "JumpPowerTxt"
+JumpPowerTxt.Parent = Plr
+JumpPowerTxt.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+JumpPowerTxt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPowerTxt.BorderSizePixel = 0
+JumpPowerTxt.Position = UDim2.new(0.581218302, 0, 0.524064183, 0)
+JumpPowerTxt.Size = UDim2.new(0, 131, 0, 27)
+JumpPowerTxt.Font = Enum.Font.SourceSans
+JumpPowerTxt.Text = "Jump Power"
+JumpPowerTxt.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpPowerTxt.TextSize = 14.000
+
+UICorner_13.Parent = JumpPowerTxt
+
+HomePage.Name = "HomePage"
+HomePage.Parent = Main
+HomePage.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+HomePage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomePage.BorderSizePixel = 0
+HomePage.Position = UDim2.new(0.0456852801, 0, 0.085561499, 0)
+HomePage.Size = UDim2.new(0, 103, 0, 24)
+HomePage.Font = Enum.Font.SourceSans
+HomePage.Text = "Home Page"
+HomePage.TextColor3 = Color3.fromRGB(0, 0, 0)
+HomePage.TextSize = 14.000
+
+UICorner_14.Parent = HomePage
+
+Player.Name = "Player"
+Player.Parent = Main
+Player.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Player.BorderSizePixel = 0
+Player.Position = UDim2.new(0.0456852801, 0, 0.700534761, 0)
+Player.Size = UDim2.new(0, 103, 0, 24)
+Player.Font = Enum.Font.SourceSans
+Player.Text = "Player Settings"
+Player.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player.TextSize = 14.000
+
+UICorner_15.Parent = Player
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Main
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scripts.BorderSizePixel = 0
+Scripts.Size = UDim2.new(0, 394, 0, 187)
+Scripts.Visible = false
+
+ScrollingFrame.Parent = Scripts
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.436548233, 0, 0, 0)
+ScrollingFrame.Size = UDim2.new(0, 222, 0, 187)
+
+ArcaneEU.Name = "ArcaneEU"
+ArcaneEU.Parent = ScrollingFrame
+ArcaneEU.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+ArcaneEU.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ArcaneEU.BorderSizePixel = 0
+ArcaneEU.Position = UDim2.new(0.162162155, 0, 0.053475935, 0)
+ArcaneEU.Size = UDim2.new(0, 165, 0, 24)
+ArcaneEU.Font = Enum.Font.SourceSans
+ArcaneEU.Text = "ArcaneEU - Blade Ball"
+ArcaneEU.TextColor3 = Color3.fromRGB(0, 0, 0)
+ArcaneEU.TextSize = 14.000
+
+UICorner_16.Parent = ArcaneEU
+
+TextLabel.Parent = ArcaneEU
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.163636357, 0, 1, 0)
+TextLabel.Size = UDim2.new(0, 110, 0, 13)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Creds: Dizzy/Di33le"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = ScrollingFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.162162155, 0, 0.203208551, 0)
+InfiniteYield.Size = UDim2.new(0, 165, 0, 24)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield (Risky)"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextSize = 14.000
+
+UICorner_17.Parent = InfiniteYield
+
+Jared.Name = "Jared"
+Jared.Parent = ScrollingFrame
+Jared.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Jared.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Jared.BorderSizePixel = 0
+Jared.Position = UDim2.new(0.157657653, 0, 0.358288765, 0)
+Jared.Size = UDim2.new(0, 165, 0, 24)
+Jared.Font = Enum.Font.SourceSans
+Jared.Text = "Jared - KAH"
+Jared.TextColor3 = Color3.fromRGB(0, 0, 0)
+Jared.TextSize = 14.000
+
+UICorner_18.Parent = Jared
+
+ScriptsPage.Name = "ScriptsPage"
+ScriptsPage.Parent = Main
+ScriptsPage.BackgroundColor3 = Color3.fromRGB(156, 156, 156)
+ScriptsPage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsPage.BorderSizePixel = 0
+ScriptsPage.Position = UDim2.new(0.0456852801, 0, 0.390374333, 0)
+ScriptsPage.Size = UDim2.new(0, 103, 0, 24)
+ScriptsPage.Font = Enum.Font.SourceSans
+ScriptsPage.Text = "Scripts Page"
+ScriptsPage.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsPage.TextSize = 14.000
+
+UICorner_19.Parent = ScriptsPage
+
+-- Scripts:
+
+local function VIOSTCG_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local s = 0
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if s == 0 then
+			script.Parent.Parent.Main.Home.Visible=false
+			script.Parent.Parent.Main.Plr.Visible=false
+			script.Parent.Parent.Main.Scripts.Visible=false
+			s = 2
+			script.Parent.Parent.Main:TweenSize(UDim2.new(0, 0, 0, 0))
+			wait(0.92)
+			script.Parent.Parent.Main.Visible=false
+			script.Parent.Text="+"
+			s = 1
+		elseif s == 1 then
+			s=2
+			script.Parent.Parent.Main.Visible=true
+			script.Parent.Parent.Main:TweenSize(UDim2.new(0, 394, 0, 187))
+			wait(1)
+			script.Parent.Parent.Main.Home.Visible=true
+			script.Parent.Text="-"
+			s=0
+		end
+	end)
+end
+coroutine.wrap(VIOSTCG_fake_script)()
+local function VNQJ_fake_script() -- TopBar.LocalScript 
+	local script = Instance.new('LocalScript', TopBar)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(VNQJ_fake_script)()
+local function SNHZVA_fake_script() -- HideDisplay.LocalScript 
+	local script = Instance.new('LocalScript', HideDisplay)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.DName.Text="DisplayName is hidden."
+		script.Parent:Destroy()
+	end)
+end
+coroutine.wrap(SNHZVA_fake_script)()
+local function GSVD_fake_script() -- HideID.LocalScript 
+	local script = Instance.new('LocalScript', HideID)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.UserId.Text="UserID is hidden."
+		script.Parent:Destroy()
+	end)
+end
+coroutine.wrap(GSVD_fake_script)()
+local function JFBTMEQ_fake_script() -- HideUsername.LocalScript 
+	local script = Instance.new('LocalScript', HideUsername)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.DaName.Text="UserName is hidden."
+		script.Parent:Destroy()
+	end)
+end
+coroutine.wrap(JFBTMEQ_fake_script)()
+local function KIICP_fake_script() -- DaName.LocalScript 
+	local script = Instance.new('LocalScript', DaName)
+
+	script.Parent.Text="Username: "..game.Players.LocalPlayer.Name
+end
+coroutine.wrap(KIICP_fake_script)()
+local function OEMOXX_fake_script() -- DName.LocalScript 
+	local script = Instance.new('LocalScript', DName)
+
+	script.Parent.Text="Display Name: "..game.Players.LocalPlayer.DisplayName
+end
+coroutine.wrap(OEMOXX_fake_script)()
+local function TTJVRC_fake_script() -- Ver.LocalScript 
+	local script = Instance.new('LocalScript', Ver)
+
+	
+end
+coroutine.wrap(TTJVRC_fake_script)()
+local function FXVB_fake_script() -- UserId.LocalScript 
+	local script = Instance.new('LocalScript', UserId)
+
+	script.Parent.Text="UserID: "..game.Players.LocalPlayer.UserId
+end
+coroutine.wrap(FXVB_fake_script)()
+local function QPFI_fake_script() -- WalkSpeed.LocalScript 
+	local script = Instance.new('LocalScript', WalkSpeed)
+
+	script.Parent.Changed:Connect(function()
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=script.Parent.Text
+		
+	end)
+end
+coroutine.wrap(QPFI_fake_script)()
+local function ANTM_fake_script() -- JumpPower.LocalScript 
+	local script = Instance.new('LocalScript', JumpPower)
+
+	script.Parent.Changed:Connect(function()
+		while true do
+			game.Players.LocalPlayer.Character:WaitForChild('Humanoid').JumpPower=script.Parent.Text
+			wait(0.05)
+		end
+		
+	end)
+end
+coroutine.wrap(ANTM_fake_script)()
+local function LWSZAG_fake_script() -- HomePage.LocalScript 
+	local script = Instance.new('LocalScript', HomePage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Home.Visible=true
+		script.Parent.Parent.Plr.Visible=false
+		script.Parent.Parent.Scripts.Visible=false
+	end)
+end
+coroutine.wrap(LWSZAG_fake_script)()
+local function CLIG_fake_script() -- Player.LocalScript 
+	local script = Instance.new('LocalScript', Player)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Home.Visible=false
+		script.Parent.Parent.Plr.Visible=true
+		script.Parent.Parent.Scripts.Visible=false
+	end)
+end
+coroutine.wrap(CLIG_fake_script)()
+local function UDRABGO_fake_script() -- ArcaneEU.LocalScript 
+	local script = Instance.new('LocalScript', ArcaneEU)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text="Executed!"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DIZZYTHELEGEND/ArcaneEU/main/ArcaneEU%20-%20BladeBall"))()
+	end)
+end
+coroutine.wrap(UDRABGO_fake_script)()
+local function SQHRKVN_fake_script() -- InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text="Executed!"
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(SQHRKVN_fake_script)()
+local function EQZHMSW_fake_script() -- Jared.LocalScript 
+	local script = Instance.new('LocalScript', Jared)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Text="Executed!"
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/JamieCraigTucker/jared/main/jared_script",true))()
+	end)
+end
+coroutine.wrap(EQZHMSW_fake_script)()
+local function USMN_fake_script() -- ScriptsPage.LocalScript 
+	local script = Instance.new('LocalScript', ScriptsPage)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Home.Visible=false
+		script.Parent.Parent.Plr.Visible=false
+		script.Parent.Parent.Scripts.Visible=true
+	end)
+end
+coroutine.wrap(USMN_fake_script)()
